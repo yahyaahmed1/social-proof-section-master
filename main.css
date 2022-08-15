@@ -1,0 +1,260 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.bg-mobile {
+  display: none;
+}
+
+img.top {
+  position: fixed;
+  top: 0;
+}
+
+img.bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.wraper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.container {
+  width: 1175px;
+  height: 700px;
+}
+
+header {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  /* padding-bottom: 50px; */
+}
+
+h1 {
+  position: relative;
+  height: 150px;
+  width: 365px;
+  font-size: 3.5em;
+  color: hsl(300, 43%, 22%);
+  padding: 50px 50px 10px 0;
+  margin: 0;
+}
+
+header > p {
+  width: 415px;
+  font-size: 18px;
+  line-height: 25px;
+  color: hsl(300, 43%, 22%, 90%);
+}
+
+.stars {
+  font-weight: 600;
+  color: hsl(300, 43%, 22%);
+  height: 200px;
+  position: relative;
+  display: inline-flex;
+  left: 21%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.stars > div {
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  background-color: hsl(290deg 27% 96%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Guru {
+  position: relative;
+  left: 10%;
+}
+
+.BestTech {
+  position: relative;
+  left: 20%;
+}
+
+.persons {
+  width: 100%;
+  height: 55%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.persons > div {
+  width: 295px;
+  height: 190px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.persons .header {
+  width: 60%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 21px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.persons img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.persons .info span {
+  color: hsl(333, 80%, 67%);
+  font-weight: 100;
+}
+
+.persons div .description {
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.colton {
+  position: relative;
+  bottom: 40px;
+}
+
+.Irene {
+  position: relative;
+  bottom: 20px;
+}
+
+@media (max-width: 770px) {
+  .bg-desktop {
+    display: none;
+  }
+
+  .bg-mobile {
+    display: block;
+  }
+
+  .wraper {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .container {
+    width: 375px;
+    height: inherit;
+  }
+
+  header {
+    display: flex;
+    position: relative;
+    padding-bottom: 15px;
+    flex-direction: column;
+  }
+
+  header > p {
+    padding: 15px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 45px;
+    height: auto;
+    padding: 0;
+  }
+
+  .stars {
+    display: flex;
+    left: unset;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .stars > div {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .Guru {
+    left: 0;
+  }
+
+  .BestTech {
+    left: 0;
+  }
+
+  .persons {
+    width: auto;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .persons > div {
+    width: 260px;
+    height: auto;
+    text-align: start;
+  }
+
+  .persons .header {
+    width: 70%;
+  }
+
+  .colton {
+    position: unset;
+  }
+
+  .Irene {
+    position: unset;
+  }
+
+  .anne {
+    position: unset;
+  }
+}
